@@ -36,6 +36,10 @@ The entire payload is:
 
 ## list of my first experiments
 
+**1/buid a website and write scientific content**
+
+![image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-CR5y0ySb-KjV7RYCaQnwdoRMGko53j788C01hZ97BgXwaLJAglVmLmF3A2BSBI2Upkde3LDXIlzVkpvE5MzVe0suueAn5tYR4AQqnL-fSEtMd_QEPKiZCBTkZmuuNLnDsEFdNZYezeAgPQwyZzz0hX7Vs4tbjush5mJYyHC4BM1aTlDhAi0C-yUIw/s1788/javascript-sandbox-codex-openai-1.jpg)
+
 
 **(in progress)**
 
