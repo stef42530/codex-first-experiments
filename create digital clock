@@ -1,0 +1,29 @@
+/* make beautiful digital clock in JavaScript */
+var clock = document.createElement('div');
+clock.style.fontSize = 'xx-large';
+clock.style.fontFamily = 'monospace';
+clock.style.color = '#00f';
+clock.style.backgroundColor = '#fff';
+clock.style.padding = '1em';
+clock.style.border = '1px solid #00f';
+clock.style.borderRadius = '1em';
+clock.style.boxShadow = '0 0 1em #00f';
+clock.style.textShadow = '0 0 1em #00f';
+clock.style.textAlign = 'center';
+clock.style.position = 'fixed';
+clock.style.top = '1em';
+clock.style.right = '1em';
+clock.style.zIndex = '9999';
+document.body.appendChild(clock);
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  if (hours < 10) hours = '0' + hours;
+  if (minutes < 10) minutes = '0' + minutes;
+  if (seconds < 10) seconds = '0' + seconds;
+  clock.innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(updateClock, 1000);
+updateClock();
