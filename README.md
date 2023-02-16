@@ -6,9 +6,9 @@ I use JavaScript infrequently, so I try this tool and maybe it would be good to 
 ## introduction of codex javascript sandbox
 Based on GPT-3 Codex was trained on terabytes of openly available code pulled from GitHub (73 millions programmers) and also Stack Overflow, as well as English language examples.
 
-GPT-3 : https://doi.org/10.48550/arXiv.2212.00857
+one article about GPT-3 : https://doi.org/10.48550/arXiv.2212.00857
  
-Codex : https://doi.org/10.48550/arXiv.2107.03374
+first article of Codex : https://doi.org/10.48550/arXiv.2107.03374
 
 It’s based on « Prompt engineering », the practice of using prompts to get the output you want. A prompt is a sequence of text like a sentence or a block of code.
 
