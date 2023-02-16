@@ -36,12 +36,4 @@ The entire payload is:
 
 ## list of my first experiments
 soon
-
-
-- - - - - - - 
-![image](https://user-images.githubusercontent.com/22524059/219437522-d9bdd825-40b1-4235-9428-97fc3f8948dd.png)
-
-
-- - - - - - - 
-![image](https://user-images.githubusercontent.com/22524059/219429599-1a3373cd-e384-49cb-b7f3-4f39855ee76a.png)
-
+-----
