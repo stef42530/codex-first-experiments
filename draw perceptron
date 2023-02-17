@@ -1,0 +1,123 @@
+/* draw 2 inputs and draw SVG arrow lines from these inputs to a perceptron */
+var input1 = document.createElement('input');
+input1.type = 'number';
+input1.value = '1';
+input1.style.position = 'absolute';
+input1.style.left = '100px';
+input1.style.top = '100px';
+document.body.appendChild(input1);
+var input2 = document.createElement('input');
+input2.type = 'number';
+input2.value = '1';
+input2.style.position = 'absolute';
+input2.style.left = '100px';
+input2.style.top = '200px';
+document.body.appendChild(input2);
+var perceptron = document.createElement('div');
+perceptron.style.position = 'absolute';
+perceptron.style.left = '300px';
+perceptron.style.top = '110px';
+perceptron.style.width = '100px';
+perceptron.style.height = '100px';
+perceptron.style.backgroundColor = '#ccc';
+document.body.appendChild(perceptron);
+var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svg.setAttribute('width', '100%');
+svg.setAttribute('height', '100%');
+document.body.appendChild(svg);
+var line1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+line1.setAttribute('d', 'M 100,100 C 200,100 200,100 300,150');
+line1.setAttribute('stroke', 'black');
+line1.setAttribute('stroke-width', '2');
+line1.setAttribute('fill', 'none');
+svg.appendChild(line1);
+var line2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+line2.setAttribute('d', 'M 100,200 C 200,200 200,200 300,150');
+line2.setAttribute('stroke', 'black');
+line2.setAttribute('stroke-width', '2');
+line2.setAttribute('fill', 'none');
+svg.appendChild(line2);
+
+/* change perceptron to a beautiful red circle */
+perceptron.style.borderRadius = '50%';
+perceptron.style.backgroundColor = 'red';
+
+/* and below draw perceptron algorithm */
+var perceptronAlgorithm = document.createElement('div');
+perceptronAlgorithm.style.position = 'absolute';
+perceptronAlgorithm.style.left = '400px';
+perceptronAlgorithm.style.top = '110px';
+/* -- change 150px to 110px */
+perceptronAlgorithm.style.width = '300px';
+perceptronAlgorithm.style.height = '200px';
+perceptronAlgorithm.style.backgroundColor = '#ccc';
+perceptronAlgorithm.innerHTML = '<b>Perceptron Algorithm</b><br>' +
+  '<ol>' +
+  '<li>Initialize weights and bias</li>' +
+  '<li>For each training example (x, y):</li>' +
+  '<li>Compute output: y_hat = sign(w1*x1 + w2*x2 + ... + wn*xn + b)</li>' +
+  '<li>If y_hat != y:</li>' +
+  '<li>w1 = w1 + y*x1</li>' +
+  '<li>w2 = w2 + y*x2</li>' +
+  '<li>...</li>' +
+  '<li>b = b + y</li>' +
+  '</ol>';
+document.body.appendChild(perceptronAlgorithm);
+
+/* put the name w1 to the right bottom of input1 */
+var w1 = document.createElement('div');
+w1.innerHTML = 'w1';
+w1.style.position = 'absolute';
+w1.style.left = '200px';
+w1.style.top = '120px';
+document.body.appendChild(w1);
+
+/* put the name w2 to the right top of input2 */
+var w2 = document.createElement('div');
+w2.innerHTML = 'w2';
+w2.style.position = 'absolute';
+w2.style.left = '200px';
+w2.style.top = '220px';
+document.body.appendChild(w2);
+
+/* put the name  x1 to the left top of input1 */
+var x1 = document.createElement('div');
+x1.innerHTML = 'x1';
+x1.style.position = 'absolute';
+x1.style.left = '80px';
+x1.style.top = '120px';
+document.body.appendChild(x1);
+
+/* put the name  x2 to the left bottom of input2 */
+var x2 = document.createElement('div');
+x2.innerHTML = 'x2';
+x2.style.position = 'absolute';
+x2.style.left = '80px';
+x2.style.top = '220px';
+document.body.appendChild(x2);
+
+/* draw input3 at the top left of circle */
+var input3 = document.createElement('input');
+input3.type = 'number';
+input3.value = '1';
+input3.style.position = 'absolute';
+input3.style.left = '300px';
+input3.style.top = '80px';
+document.body.appendChild(input3);
+
+/* put the name bias to exactly left top of input3 */
+var bias = document.createElement('div');
+bias.innerHTML = 'bias';
+bias.style.position = 'absolute';
+bias.style.left = '280px';
+bias.style.top = '100px';
+document.body.appendChild(bias);
+
+/* draw SVG lines from  the bottom left of input3 */
+var line3 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+line3.setAttribute('d', 'M 300,80 C 300,80 300,80 300,150');
+line3.setAttribute('stroke', 'black');
+line3.setAttribute('stroke-width', '2');
+line3.setAttribute('fill', 'none');
+svg.appendChild(line3);
+
